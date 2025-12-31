@@ -455,6 +455,24 @@
         .mission-type.community { --accent: #ffd700; }
         .mission-type.squad { --accent: #ff6347; }
         
+        .coming-soon-mission {
+            opacity: 0.6;
+        }
+        
+        .coming-soon-mission .emoji {
+            filter: grayscale(50%);
+        }
+        
+        .coming-soon-mission .coming-soon-badge {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.45rem;
+            color: var(--gold);
+            background: rgba(0,0,0,0.5);
+            padding: 4px 8px;
+            margin-top: 8px;
+            display: inline-block;
+        }
+        
         .mission-type.solo::before,
         .mission-type.family::before,
         .mission-type.friend::before,
@@ -719,15 +737,17 @@
                     <h3>FRIEND</h3>
                     <p>Partner up with friends</p>
                 </div>
-                <div class="mission-type community">
+                <div class="mission-type community coming-soon-mission">
                     <span class="emoji">🌍</span>
                     <h3>COMMUNITY</h3>
                     <p>Give back to your community</p>
+                    <span class="coming-soon-badge">COMING SOON</span>
                 </div>
-                <div class="mission-type squad">
+                <div class="mission-type squad coming-soon-mission">
                     <span class="emoji">⚔️</span>
                     <h3>SQUAD</h3>
                     <p>Group raids with your team</p>
+                    <span class="coming-soon-badge">COMING SOON</span>
                 </div>
             </div>
         </div>
