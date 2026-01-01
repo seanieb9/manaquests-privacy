@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - ManaQuests</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: #0a0a0f;
+            color: #d1d5db;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            color: #f472b6;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+        
+        .warning-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .warning-box h3 {
+            color: #f87171;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .warning-box p {
+            color: #fca5a5;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+        
+        .method-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .method-box h3 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .steps {
+            counter-reset: step;
+        }
+        
+        .steps li {
+            counter-increment: step;
+            list-style: none;
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .steps li::before {
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: linear-gradient(135deg, #ec4899, #a855f7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        
+        a {
+            color: #f472b6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .email-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #ec4899, #a855f7);
+            color: #fff;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+        
+        .email-link:hover {
+            text-decoration: none;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            color: #9ca3af;
+        }
+        
+        .footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Your Account</h1>
+        <p>We're sorry to see you go. This page explains how to delete your ManaQuests account and what happens to your data.</p>
+        
+        <div class="warning-box">
+            <h3>Before You Delete</h3>
+            <p>Account deletion is permanent. All your data including missions, XP, achievements, streaks, and connections will be permanently removed and cannot be recovered.</p>
+        </div>
+        
+        <h2>Option 1: Delete from the App</h2>
+        <div class="method-box">
+            <h3>In-App Deletion (Recommended)</h3>
+            <ol class="steps">
+                <li>Open the ManaQuests app</li>
+                <li>Go to <strong>Settings</strong> (gear icon)</li>
+                <li>Scroll down and tap <strong>Delete Account</strong></li>
+                <li>Enter your password to confirm</li>
+                <li>Tap <strong>Delete My Account</strong></li>
+            </ol>
+            <p style="margin-top: 1rem; color: #9ca3af; font-size: 0.95rem;">Your account will enter a 14-day grace period. You can restore it by logging in during this time. After 14 days, all data is permanently deleted.</p>
+        </div>
+        
+        <h2>Option 2: Request via Email</h2>
+        <div class="method-box">
+            <h3>Email Deletion Request</h3>
+            <p>If you cannot access the app, you can request account deletion by email:</p>
+            <ol class="steps">
+                <li>Send an email to the address below</li>
+                <li>Use the subject line: <strong>"Delete My Account"</strong></li>
+                <li>Include the email address associated with your account</li>
+                <li>We will verify your identity and process the request within 7 days</li>
+            </ol>
+            <a href="mailto:privacy@manaquests.com?subject=Delete%20My%20Account" class="email-link">
+                Email: privacy@manaquests.com
+            </a>
+        </div>
+        
+        <h2>What Gets Deleted</h2>
+        <ul>
+            <li>Your profile information (name, email, date of birth)</li>
+            <li>Profile photo (if uploaded)</li>
+            <li>All mission history and progress</li>
+            <li>XP, achievements, and streaks</li>
+            <li>Family and friend connections</li>
+            <li>All activity data</li>
+        </ul>
+        
+        <h2>What We May Retain</h2>
+        <p>In accordance with our <a href="/privacy">Privacy Policy</a>, we may retain certain anonymized or aggregated data that cannot be used to identify you, as well as any data required for legal compliance.</p>
+        
+        <a href="/" class="back-link">← Back to ManaQuests</a>
+        
+        <div class="footer">
+            <p>© 2026 ManaQuests. All rights reserved.</p>
+            <p><a href="/privacy">Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>
